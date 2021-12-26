@@ -78,6 +78,13 @@
 
 
     <script>
+        function checkday(dateTime, num=-1){
+            while (!(dateTime.getDay()>0 && dateTime.getDay()<6)) {
+                let date = dateTime.setDate(dateTime.getDate()+num);
+                dateTime = new Date(date);
+                }
+            return dateTime.toLocaleDateString().split('/');
+        }
         function updateDate(date){
             // ex：date = [2021,2,3];
             // 更新日期
@@ -86,22 +93,21 @@
             $("#datetxt").text('  日期：' + date.join('/') +'  (週' + day+')');
             // 更新圖片
             $("img").attr("src" , "./img/"+date.join('')+".jpg");
-            
+            // 更新input
             $("#date").attr("value" , date.join('-'));
+            // 更新input(視覺上)
             $("#date").val(date.join('-'));
 
         }
         function BtnupdateDate(num){
+            // 日期增減
             let date = document.getElementById('date').getAttribute('value');
             let dateTime = new Date(date);
             date = dateTime.setDate(dateTime.getDate()+num);
             dateTime = new Date(date);
-            // 跳過週末的迴圈
-            while (!(dateTime.getDay()>0 && dateTime.getDay()<6)) {
-                date = dateTime.setDate(dateTime.getDate()+num);
-                dateTime = new Date(date);
-                }
-            date = dateTime.toLocaleDateString().split('/');
+            // 跳過週末的函式
+            date = checkday(dateTime, num);
+            // 補零以符合格式
             date[1] = date[1].padStart(2,'0');
             date[2] = date[2].padStart(2,'0');
             updateDate(date);
@@ -111,7 +117,9 @@
         
         $(document).ready(function()
             {
-                let date = document.getElementById('date').getAttribute('value').split('-');
+                // let date = document.getElementById('date').getAttribute('value').split('-');
+            // 跳過週末的函式
+                date = checkday(new Date());
                 updateDate(date);
             }
         );
