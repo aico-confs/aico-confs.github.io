@@ -15,6 +15,7 @@
 </head>
 <body>
     <div class="topbar">
+        <button id="back" class="back">前一天</button>
         <div class="search">
             <label >
                 <!-- <input type="text" placeholder="搜尋" > -->
@@ -23,6 +24,7 @@
                 <ion-icon name="search-outline"></ion-icon>
             </label>
         </div>
+        <button id="next" class="button">下一天</button>
        
     </div>
     
@@ -78,10 +80,25 @@
     <script>
         function updateDate(date){
             // ex：date = [2021,2,3];
+            console.log(date);
             // 更新日期
             $("#datetxt").text('  日期：' +date.join('/'));
             // 更新圖片
             $("img").attr("src" , "./img/"+date.join('')+".jpg");
+            $("#date").attr("value" , date.join('-'));
+
+        }
+        function BtnupdateDate(num){
+            let date = document.getElementById('date').getAttribute('value');
+            let dateTime = new Date(date);
+            date = dateTime.setDate(dateTime.getDate()+num);
+            dateTime = new Date(date);
+            date = dateTime.toLocaleDateString().split('/');
+            console.log('date');
+            date[1] = date[1].padStart(2,'0');
+            date[2] = date[2].padStart(2,'0');
+            updateDate(date);
+
         }
         // 首次更新日期
         
@@ -91,7 +108,20 @@
                 updateDate(date);
             }
         );
-
+        
+        // 按鈕更新日期
+        $('#back').click(function()
+                {
+                    BtnupdateDate(-1);
+                }
+                       
+            );
+        $('#next').click(function()
+                {
+                    BtnupdateDate(1);
+                }
+                       
+            );        
         
         // Firefox, Google Chrome, Opera, Safari, Internet Explorer from version 9
         function OnInput (event) {
