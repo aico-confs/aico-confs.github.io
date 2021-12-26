@@ -18,7 +18,8 @@
         <div class="search">
             <label >
                 <!-- <input type="text" placeholder="搜尋" > -->
-                 <input type="date" value="" class="button">
+	            <input id="date" type="date" oninput="OnInput (event)" onpropertychange="OnPropChanged (event)" value="2021-01-04" />
+
                 <ion-icon name="search-outline"></ion-icon>
             </label>
         </div>
@@ -33,7 +34,7 @@
          
             <div class= "title" >
                 
-                <h2 ><i id="date" class="far fa-calendar-alt"></i></h2>
+                <h2 ><i id='datetxt' class="far fa-calendar-alt"></i></h2>
                 <hr>
                 <ion-icon name="flag-outline"></ion-icon>
                 <h3>
@@ -69,31 +70,43 @@
            
         </div>
         <div  class="pic"style="border:5px #FFAC55 solid">
-             <img id="img" src="./img/20210101.jpg" alt="沒有這天的資訊">
+             <img id="img"  alt="沒有這天的資訊">
         </div>
     </div>
 
 
     <script>
-        let button = document.querySelector(".button");
-        button.addEventListener(
-        "click",
-        function () {
-            // alert("HELLO WORLD!");
-        },
-        false
-        );
-        // 更新日期
-        let date = document.getElementById('img').getAttribute('src').slice(-12, -4);
-        console.log(date);
-        date = date.slice(0, 4) + '/' + date.slice(4, 6) + '/' + date.slice(6, 8);
-        $(document).ready(function()
-        {
-            $("#date").text('  日期：' + date);
+        function updateDate(date){
+            // ex：date = [2021,2,3];
+            // 更新日期
+            $("#datetxt").text('  日期：' +date.join('/'));
+            // 更新圖片
+            $("img").attr("src" , "./img/"+date.join('')+".jpg");
         }
+        // 首次更新日期
         
+        $(document).ready(function()
+            {
+                let date = document.getElementById('date').getAttribute('value').split('-');
+                updateDate(date);
+            }
         );
 
+        
+        // Firefox, Google Chrome, Opera, Safari, Internet Explorer from version 9
+        function OnInput (event) {
+        	
+            let  date =  event.target.value.split('-');
+            updateDate(date);
+        }
+        // Internet Explorer
+        function OnPropChanged (event) {
+            if (event.propertyName.toLowerCase () == "value") {
+                let  date =  event.srcElement.value.split('-');
+                updateDate(date);
+
+                }
+        }
 
         
     </script>
