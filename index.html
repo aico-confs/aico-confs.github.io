@@ -80,12 +80,15 @@
     <script>
         function updateDate(date){
             // ex：date = [2021,2,3];
-            console.log(date);
             // 更新日期
-            $("#datetxt").text('  日期：' +date.join('/'));
+            let dateTime = new Date(date);
+            day = ['日', '一', '二', '三', '四', '五', '六'][dateTime.getDay()]
+            $("#datetxt").text('  日期：' + date.join('/') +'  (週' + day+')');
             // 更新圖片
             $("img").attr("src" , "./img/"+date.join('')+".jpg");
+            
             $("#date").attr("value" , date.join('-'));
+            $("#date").val(date.join('-'));
 
         }
         function BtnupdateDate(num){
@@ -93,8 +96,12 @@
             let dateTime = new Date(date);
             date = dateTime.setDate(dateTime.getDate()+num);
             dateTime = new Date(date);
+            // 跳過週末的迴圈
+            while (!(dateTime.getDay()>0 && dateTime.getDay()<6)) {
+                date = dateTime.setDate(dateTime.getDate()+num);
+                dateTime = new Date(date);
+                }
             date = dateTime.toLocaleDateString().split('/');
-            console.log('date');
             date[1] = date[1].padStart(2,'0');
             date[2] = date[2].padStart(2,'0');
             updateDate(date);
