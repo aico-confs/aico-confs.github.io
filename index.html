@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="topbar">
+        <div class="search">
+            <label >
+                <!-- <input type="text" placeholder="搜尋" > -->
+                 <input type="date" value="" class="button">
+                <ion-icon name="search-outline"></ion-icon>
+            </label>
+        </div>
+       
+    </div>
+    
+
+    <div class="container" style="border:5px #FFAC55 solid;">
+
+        <div class="details" style="border:5px #FFAC55 solid">
+           
+         
+            <div class= "title" >
+                
+                <h2 ><i id="date" class="far fa-calendar-alt"></i></h2>
+                <hr>
+                <ion-icon name="flag-outline"></ion-icon>
+                <h3>
+                    <i class="fas fa-envelope"></i>
+                    信箱：<?php echo $_SESSION['email']?>
+                </h3>
+    
+               
+                <h3>
+                <i class="far fa-clock"></i>
+                    註冊時間：<?php echo $_SESSION['regtime']?>
+                </h3>
+            </div>
+            <div class="history"  >
+                <!-- style="border:5px #FFAC55 solid"; -->
+    
+    
+                <div class='rule'>
+                    
+                    <h3><i class="fas fa-toolbox"></i>
+                    開啟服務：</h3>
+                    <p>說明：</br>可點擊以下服務查詢已經使用的額度</p>
+                    <!-- <p>說明：</br>可點擊以下服務查詢使用額度</p> -->
+                    
+                        
+                </div>
+    
+            </div>
+                    <ul>
+                    
+                    </ul>                
+
+           
+        </div>
+        <div  class="pic"style="border:5px #FFAC55 solid">
+             <img id="img" src="./img/20210101.jpg" alt="沒有這天的資訊">
+        </div>
+    </div>
+
+
+    <script>
+        let button = document.querySelector(".button");
+        button.addEventListener(
+        "click",
+        function () {
+            // alert("HELLO WORLD!");
+        },
+        false
+        );
+        // 更新日期
+        let date = document.getElementById('img').getAttribute('src').slice(-12, -4);
+        console.log(date);
+        date = date.slice(0, 4) + '/' + date.slice(4, 6) + '/' + date.slice(6, 8);
+        $(document).ready(function()
+        {
+            $("#date").text('  日期：' + date);
+        }
+        
+        );
+
+
+        
+    </script>
+</body>
+</html>
