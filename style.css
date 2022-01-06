@@ -7,6 +7,13 @@
     font-family: 'Noto Serif TC', serif;
 
 }
+body{
+    background-image: url('./img/logo.png') ;
+    BACKGROUND-ATTACHMENT: fixed;
+    BACKGROUND-POSITION: center 50%;
+    BACKGROUND-REPEAT: no-repeat;
+    background-size: 40%;
+}
 :root
 {
     /* --format_len:40px; */
