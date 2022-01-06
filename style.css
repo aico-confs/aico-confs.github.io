@@ -7,6 +7,18 @@
     font-family: 'Noto Serif TC', serif;
 
 }
+:root
+{
+    /* --format_len:40px; */
+    --blue:#287bff;
+    --red:#ff0066;
+    --green:#00cc99;
+    --white:#fff;
+    --grey:#f5f5f5;
+    --black1:#222;
+    --black2:#999;
+
+}
 /* .container
 {
     padding: 20px;
@@ -136,22 +148,105 @@ button {
     padding: 15px;
     display: grid;
     grid-template-columns: 1fr 1.5fr;
-    grid-gap: 15px;
+    grid-gap: 25px;
 
 }
 .details
 {
     position: relative;
     min-height: 200px;
+    max-height: 100vh;
     padding: 10px;
+    overflow-y: scroll;
     /* display: grid;
     grid-template-rows: 1fr  3fr;
     grid-gap: 20px; */
     
 }
 
+/* 進出單子的表格 */
+.tablepage
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr  ;
+    /* grid-template-rows: repeat( 1fr); */
+    grid-gap: 20px;
+    min-height: 550px;
+    padding: 15px 10px;
+    background: var(--white);
+    box-shadow: 0 7px 25px rgba(255, 233, 233, 0.08);
+    border-radius: 20px;
+    line-height: 40px;
+    
+}
+.tablepage  .kind
+{ 
+    display: flex;
+    /* justify-content: space-between;  */
+    position: relative;
+    overflow-x: scroll;
+}
+
+.tablepage table
+{
+    width: 100%;
+    border-collapse: collapse;
+}
 
 
+/* 除了第一個td*/
+.tablepage table td:nth-child(n+2)
+{ 
+    min-width: 130px;/* 每種進單法要給的文字長度 */
+    text-align: center;
+    font-size: 20px;
+    
+
+    
+}
+/* 第一個td*/
+.tablepage table td:first-child
+{ 
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    min-width: 60px;
+}
+.tablepage .table thead td
+{
+    font-weight: 600;
+
+}
+
+
+/* .tablepage table tr:hover
+{
+    background: var(--blue);
+    color: var(--white);
+
+} */
+.tablepage table tr:hover.long
+{
+    background: var(--green);
+    color: var(--white);
+}
+.tablepage table tr:hover.short
+{
+    background: var(--blue);
+    color: var(--white);
+}
+.tablepage table tr:hover :first-child
+{
+    background: var(--black1);
+    /* transition: 0.3s;
+    transform: scale(1.2) translate(0px, -5px); */
+}
+
+.tablepage table tr td.active{
+    background: var(--red); 
+    font-weight: 1000;
+}
 .pic
 {
     position: relative;
@@ -216,11 +311,14 @@ body::-webkit-scrollbar {
     /* height: 100%;   */
     display: grid;
     grid-template-columns: 1fr ;
-    /* grid-template-rows: 1.3fr 1.7fr; */
+    grid-template-rows: 1.3fr 1.7fr;
     grid-gap: 15px;
     
     }
+    .details{
+    max-height: 300px;
 
+    }
     .pic img
     {
     width: auto;
