@@ -119,6 +119,9 @@ section{
 .search label
 {
     position: relative;
+    /* display: flex;
+    justify-content: space-between; 
+    text-align: center;  */
     width: 100%;
 }
 .search label input
@@ -133,6 +136,15 @@ section{
     border: 1px solid var(--black2);
 }
 
+.search label .icon{
+    position: absolute;
+    height:100%;
+    top: 10;
+    /* bottom: 0px; */
+    left: 10px;
+    font-size: 1.5em;
+
+}
 .search label ion-icon
 {
     position: absolute;
