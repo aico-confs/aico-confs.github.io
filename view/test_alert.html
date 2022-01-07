@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+
+     <!-- alertify用 -->  
+	<script src="../js/alertify.min.js"></script>
+    <link rel="stylesheet" href="../css/alertify/alertify.core.css" />
+    <link rel="stylesheet" href="../css/alertify/alertify.default.css" id="toggleCSS" />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    
+	<a href="#" id="alert">Alert Dialog</a><br>
+
+    <script>
+        function reset () {
+            $("#toggleCSS").attr("href", "../css/alertify/alertify.default.css");
+            alertify.set({
+                labels : {
+                    ok     : "OK",
+                    cancel : "Cancel"
+                },
+                delay : 5000,
+                buttonReverse : false,
+                buttonFocus   : "ok"
+            });
+        }
+
+        $("#alert").on( 'click', function () {
+            reset();
+            alertify.alert("This is an alert dialog");
+            return false;
+        });
+
+    </script>
+</body>
+</html>
