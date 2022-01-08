@@ -263,7 +263,7 @@ button {
     /* grid-template-rows: repeat( 1fr); */
     /* grid-gap: 20px; */
     display: inline-block;
-    /* min-height: 550px; */
+    min-height: 50%;
     /* 表格最小高度 */
     padding: 15px 10px;
     background: var(--white);
@@ -367,15 +367,15 @@ button {
 }
 .pic img
 {
-    max-height: 125%;  
+    max-height: 150%;  
     max-width: 150%; 
     width: auto;
     height: auto;
     position: absolute;  
-    top: 0;  
+    /* top: 0;  
     bottom: 0;  
     left: 0;  
-    right: 0;  
+    right: 0;   */
     margin: auto;
     z-index: 9;
     /* overflow-x: auto; */

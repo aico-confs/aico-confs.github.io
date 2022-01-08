@@ -55,12 +55,21 @@ function updateDate(date){
     // 更新input(視覺上)
     $("#date").val(date.join('-'));
     // 更新基本資訊
-    let jsondata = getRequest(year,date[1]+date[2])
-    let all_title=document.querySelectorAll('.title h3');
-    all_title[0].innerHTML +=jsondata['min-block'] + ' 點';
-    all_title[1].innerHTML +=jsondata['trend'] ? '趨勢':'盤整';
-    all_title[2].innerHTML +=jsondata['jump-block'][0] ? '往上開 '+jsondata['jump-block'][1]+' 點 ':'往下開 '+jsondata['jump-block'][1]+' 點 ';
+    let jsondata = getRequest(year,date[1]+date[2]);
+    let all_title=document.querySelectorAll('.title h3 .fas');
+    let ini_title = [' 樂高框情況：',' 趨勢/盤整：','  跳空框：']
+    all_title.forEach(function(x) {
+            x.innerHTML = ini_title[0];
+            ini_title.shift();
+          });
 
+    try{   
+        all_title[0].innerHTML +=jsondata['min-block'] + ' 點';
+        all_title[1].innerHTML +=(jsondata['trend'] ? '趨勢':'盤整');
+        all_title[2].innerHTML +=(jsondata['jump-block'][0] ? '往上開 '+jsondata['jump-block'][1]+' 點 ':'往下開 '+jsondata['jump-block'][1]+' 點 ');
+    }catch{
+        ;
+    }
     // 更新檢討單
     let table_html=document.getElementById('tablepage');
     table_html.innerHTML = '';//reset
