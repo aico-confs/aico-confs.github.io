@@ -47,8 +47,9 @@ function updateDate(date){
         $("#img").attr("src" , "../img/"+date.join('')+".jpg");
     }else{
         alertify.alert("沒有這天的檢討單");
-        $("#img").attr("src" , "");
         $("#masa_msg").attr("style" , "background-image: url('../img/logo.png');");
+        $("#img").attr("src" , "");
+        
     }
     // 更新input
     $("#date").attr("value" , date.join('-'));
