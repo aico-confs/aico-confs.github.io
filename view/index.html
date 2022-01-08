@@ -31,7 +31,7 @@
         <div class="search">
             <label >
                 <div  class="icon" ><i class="fas fa-search-dollar"></i></div>
-	            <input id="date" type="date" oninput="OnInput (event)" onpropertychange="OnPropChanged (event)" />
+	            <input id="date" type="date"  />
                 <!-- <li style="list-style:none;"><ion-icon name="search-outline"></ion-icon></li> -->
                 
                 
@@ -49,19 +49,17 @@
            
          
             <div class= "title" >
-                
                 <!-- 日期當大標題 -->
                 <h2 ><i id='datetxt' class="far fa-calendar-alt"></i></h2>
                 <hr>
                 
                 <h3>
-                    <i class="fas fa-envelope"></i>
+                    <i class="far fa-square"></i>
                     樂高框情況：
                 </h3>
-    
-               
+                  
                 <h3>
-                    <i class="far fa-clock"></i>
+                    <i class="fas fa-network-wired"></i>
                     趨勢/盤整：
                 </h3>
 
@@ -70,89 +68,9 @@
                     跳空：
                 </h3>
             </div>
-            <div class="tablepage"  >
+            <div id="tablepage" class="tablepage"  >
                 <!-- style="border:5px #FFAC55 solid"; -->
     
-
-                
-                     <h4>第一單</h4>
-                     <div class="kind" > 
-                       
-                        <table>
-                            <tr class='long'>
-                                <td>進單</td>
-                                <td>開盤紅</td>
-                                <td>力道歸還法</td>
-                                <td>純訊號後回測</td>
-                                <td>區間突破法</td>
-                                <td>基本型態法</td>
-                                <td>反向單</td>
-                                <td>續走單</td>
-                            </tr>
-                        
-                            <tr class='short'>
-                                <td>出單</td>
-                                <td>樂高停利法</td>
-                                <td>力道歸還法</td>
-                                <td>強勢停利法</td>
-                                <td>中線停利法</td>
-                                <td>3點保本法</td>
-                                
-                            </tr>
-                        </table>
-                    </div>
-                    <h4>第一單</h4>
-                    <div class="kind" > 
-                      
-                       <table>
-                           <tr class='long'>
-                               <td>進單</td>
-                               <td>開盤紅</td>
-                               <td class="active">力道歸還法</td>
-                               <td>純訊號後回測</td>
-                               <td>區間突破法</td>
-                               <td>基本型態法</td>
-                               <td>反向單</td>
-                               <td>續走單</td>
-                           </tr>
-                       
-                           <tr class='short'>
-                               <td>出單</td>
-                               <td>樂高停利法</td>
-                               <td>力道歸還法</td>
-                               <td>強勢停利法</td>
-                               <td>中線停利法</td>
-                               <td>3點保本法</td>
-                               
-                           </tr>
-                       </table>
-                   </div>
-                   <h4>第一單</h4>
-                   <div class="kind" > 
-                     
-                      <table>
-                          <tr class='long'>
-                              <td>進單</td>
-                              <td>開盤紅</td>
-                              <td>力道歸還法</td>
-                              <td>純訊號後回測</td>
-                              <td>區間突破法</td>
-                              <td>基本型態法</td>
-                              <td>反向單</td>
-                              <td>續走單</td>
-                          </tr>
-                      
-                          <tr class='short'>
-                              <td>出單</td>
-                              <td>樂高停利法</td>
-                              <td>力道歸還法</td>
-                              <td>強勢停利法</td>
-                              <td>中線停利法</td>
-                              <td>3點保本法</td>
-                              
-                          </tr>
-                      </table>
-                  </div>
                     
     
             </div>
@@ -167,22 +85,11 @@
     </div>
  </section>
 <script src="../js/msg.js"> </script><!-- 需在最前面 -->
-<script src="../js/date.js"> </script>
-<script src="../js/trade.js"> </script>
+<script src="../js/bigimg.js"> </script>
+<script  src="../js/trade.js"> </script>
+<script type="module" src="../js/date.js"></script>
 
-<script>
-    let big = document.querySelector(".big")
-    let big_img = document.querySelector(".big .img img")
-    big.onclick = function(){
-        big.style.display = "none";
-        big_img.src = "";
-    }
 
-    document.querySelector(".pic").onclick = function(){
-            big_img.src = document.querySelector(".pic"+" img").src;
-            big.style.display = "block";
-    }
-</script>
         
    
 

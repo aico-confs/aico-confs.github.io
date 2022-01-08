@@ -8,7 +8,7 @@
 
 }
 body{
-    background-image: url('./img/logo.png') ;
+    background-image: url('../img/logo.png') ;
     BACKGROUND-ATTACHMENT: fixed;
     BACKGROUND-POSITION: center 50%;
     BACKGROUND-REPEAT: no-repeat;
@@ -236,7 +236,7 @@ button {
 {
     background: var(--grey);
     position: relative;
-    min-height: 200px;
+    min-height: 400px;
     max-height: 100vh;
     padding: 10px;
     border-radius: 20px;
@@ -246,16 +246,25 @@ button {
     grid-gap: 20px; */
     
 }
+.title{
+    padding: 5px 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    line-height: 35px;
 
+}
 /* 進出單子的表格 */
 .tablepage
 {
     position: relative;
-    display: grid;
-    grid-template-columns: 1fr  ;
+    width: 100%;
+    /* display: grid; */
+    /* grid-template-columns: 1fr  ; */
     /* grid-template-rows: repeat( 1fr); */
-    grid-gap: 20px;
-    min-height: 550px;
+    /* grid-gap: 20px; */
+    display: inline-block;
+    /* min-height: 550px; */
+    /* 表格最小高度 */
     padding: 15px 10px;
     background: var(--white);
     box-shadow: 0 7px 25px rgba(255, 233, 233, 0.08);
@@ -266,6 +275,7 @@ button {
 .tablepage  .kind
 { 
     display: flex;
+    margin-bottom: 20px;
     /* justify-content: space-between;  */
     position: relative;
     overflow-x: scroll;
@@ -273,6 +283,7 @@ button {
 
 .tablepage table
 {
+    
     width: 100%;
     border-collapse: collapse;
 }
@@ -281,7 +292,7 @@ button {
 /* 除了第一個td*/
 .tablepage table td:nth-child(n+2)
 { 
-    min-width: 150px;/* 每種進單法要給的文字長度 */
+    min-width: 150px;/* 每種進單法要給的文字寬度 */
     padding: 0px 6px;
     text-align: center;
     font-size: 20px;
@@ -342,8 +353,7 @@ button {
     border-radius: 20px;
     overflow-x:scroll; 
     overflow-y:scroll; 
-    background-image: url('../img/logo.png') ;
-    BACKGROUND-POSITION: center 35%;
+    BACKGROUND-POSITION: center 50%;
     BACKGROUND-REPEAT: no-repeat;
     background-size: 70%;
     SCROLLBAR-FACE-COLOR: #c2d3fc; 
@@ -363,7 +373,7 @@ button {
     height: auto;
     position: absolute;  
     top: 0;  
-    /* bottom: 0;   */
+    bottom: 0;  
     left: 0;  
     right: 0;  
     margin: auto;
