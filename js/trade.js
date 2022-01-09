@@ -52,7 +52,7 @@ function updateTable(day_data){
                 '<td>基本型態法</td>',//4
                 '<td>短軌</td>',//5
                 '<td>轉勢K</td>',//6
-                '<td>6點流(3點保本)</td>',//7
+                '<td>6(3)點流</td>',//7
             ];
         result += '<h4>第'+(i+1)+'單</h4>\
                     \n\t<div class="kind">\
