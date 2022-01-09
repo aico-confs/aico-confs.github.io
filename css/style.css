@@ -228,7 +228,7 @@ button {
     padding: 30px;
     display: grid;
     grid-template-columns: 1fr 1.5fr;
-    grid-gap: 25px;
+    grid-gap: 35px;
 
 }
 .details
