@@ -58,7 +58,7 @@ function updateDate(date){
     $("#date").val(date.join('-'));
     // 更新基本資訊及檢討單
     let all_title=document.querySelectorAll('.title h3 .fas');
-    let ini_title = [' 樂高框情況：',' 盤型：','  跳空框：']
+    let ini_title = [' 樂高框情況：',' 盤型：',' 跳空框：']
     let table_html=document.getElementById('tablepage');
     //reset
     all_title.forEach(function(x) {
@@ -71,6 +71,7 @@ function updateDate(date){
         all_title[0].innerHTML +=jsondata['min-block'] + ' 點';
         all_title[1].innerHTML +=(jsondata['trend'] ? '趨勢':'盤整') + (jsondata['middle'] ? '、上衝下洗回中間':'' );
         all_title[2].innerHTML +=(jsondata['jump-block']>0 ? '往上開 '+jsondata['jump-block']+' 點 ':'往下開 '+Math.abs(jsondata['jump-block'])+' 點 ');
+        all_title[2].innerHTML = jsondata['jump-block']>120 ? '<span style="color:red;">'+all_title[2].innerHTML+'</span>' :all_title[2].innerHTML
         updateTable(jsondata);
     }catch{
         ;

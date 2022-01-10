@@ -50,7 +50,10 @@ body{
 
 }
 .big .img img{
-	height: 100%;
+    max-height: 150%;  
+    max-width: 150%; 
+    width: auto;
+    height: auto;
 	position: absolute;
 	left: 0;
 	right: 0;
