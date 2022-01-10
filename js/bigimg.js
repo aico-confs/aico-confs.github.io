@@ -4,7 +4,7 @@
 //         big.style.display = "block";
 // }
 function fileExists(url){
-    var isExists;
+    let isExists;
     $.ajax({
         url:url,
         async:false,
