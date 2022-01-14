@@ -47,10 +47,11 @@ body{
 	bottom: 0;
 	margin: auto;
     overflow-x: scroll;
+    overflow-y: scroll;
 
 }
 .big .img img{
-    max-height: 150%;  
+    max-height: 100%;  
     max-width: 150%; 
     width: auto;
     height: auto;

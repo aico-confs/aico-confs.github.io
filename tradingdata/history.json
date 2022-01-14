@@ -90,6 +90,47 @@
                 "middle":false,
                 "jump-block":-47,
                 "min-block":22
+            },
+            "0112":
+            {
+                "trade":[
+                    ["short",[0,4,6],[0]],
+                    ["short",[1,4],[1]]
+                    
+        
+                ],
+                "trend":0,
+                "middle":false,
+                "jump-block":146,
+                "min-block":17
+            },
+            "0113":
+            {
+                "trade":[
+                    ["short",[0,4,6],[0,3]],
+                    ["short",[2,5],[4]],
+                    ["long",[2,3],[0]]
+                    
+        
+                ],
+                "trend":1,
+                "middle":true,
+                "jump-block":73,
+                "min-block":20
+            },
+            "0114":
+            {
+                "trade":[
+                    ["short",[0,4,6],[6]],
+                    ["short",[2,3],[0]],
+                    ["short",[2,7],[2]]
+                    
+        
+                ],
+                "trend":1,
+                "middle":false,
+                "jump-block":122,
+                "min-block":66
             }
         }
 }

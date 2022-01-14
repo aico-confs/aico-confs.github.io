@@ -47,7 +47,7 @@ function updateTable(day_data){
             out = [ 
                 '<td>樂高停利法</td>',//0
                 '<td>力道歸還法</td>',//1
-                '<td>中線停利法</td>',//2
+                '<td>N框中線停利</td>',//2
                 '<td>基本型態法</td>',//3
                 '<td>強勢停利法</td>',//4
                 '<td>短軌</td>',//5
