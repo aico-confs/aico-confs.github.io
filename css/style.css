@@ -337,6 +337,12 @@ button {
     background: var(--blue);
     color: var(--white);
 }
+.tablepage table tr:hover.reflect
+{
+    background: var(--blue);
+    color: var(--white);
+}
+
 .tablepage table tr:hover :first-child
 {
     background: var(--black1);
@@ -347,6 +353,10 @@ button {
 .tablepage table tr td.active{
     background: var(--red); 
     font-weight: 1000;
+}
+.tablepage table tr td[colspan="8"]
+{
+    text-align: left; 
 }
 .pic
 {

@@ -66,12 +66,14 @@ function updateDate(date){
             ini_title.shift();
           });
     table_html.innerHTML = '';
+    let jsondata = getRequest(year,date[1]+date[2]);
     try{  
-        let jsondata = getRequest(year,date[1]+date[2]);
+        
         all_title[0].innerHTML +=jsondata['min-block'] + ' 點';
         all_title[1].innerHTML +=(jsondata['trend'] ? '趨勢':'盤整') + (jsondata['middle'] ? '、上衝下洗回中間':'' );
         all_title[2].innerHTML +=(jsondata['jump-block']>0 ? '往上開 '+jsondata['jump-block']+' 點 ':'往下開 '+Math.abs(jsondata['jump-block'])+' 點 ');
         all_title[2].innerHTML = jsondata['jump-block']>120 ? '<span style="color:red;">'+all_title[2].innerHTML+'</span>' :all_title[2].innerHTML
+        
         updateTable(jsondata);
     }catch{
         ;

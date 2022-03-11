@@ -9,6 +9,11 @@
                     ["short",[1,6],[0,1]]
                     
                 ],
+                "reflect":
+                ["try1",
+                 "try2",
+                 "try3"               
+                ],
                 "trend":1,
                 "middle":false,
                 "jump-block":-39,
@@ -23,6 +28,11 @@
                     ["short",[1,5,6],[0,1,2,4]],
                     ["short",[1,2,7],[0,1]]
                     
+                ],
+                "reflect":
+                ["try1",
+                 "try2",
+                 "try3"               
                 ],
                 "trend":0,
                 "middle":false,
@@ -40,6 +50,11 @@
                     ["short",[5,6],[2]],
                     ["short",[6,7],[0]]
                 ],
+                "reflect":
+                ["try1",
+                 "try2",
+                 "try3"               
+                ],
                 "trend":0,
                 "middle":false,
                 "jump-block":96,
@@ -54,6 +69,11 @@
                     ["short",[1,6],[1]],
                     ["long",[2,4],[0,4]]
                 ],
+                "reflect":
+                ["try1",
+                 "try2",
+                 "try3"               
+                ],
                 "trend":0,
                 "middle":false,
                 "jump-block":120,
@@ -67,6 +87,11 @@
                     ["short",[2,5],[5]],
                     ["long",[2,3,4,5],[0,4]],
                     ["long",[1,7],[1]]
+                ],
+                "reflect":
+                [" try1",
+                 "try2",
+                 "try3"               
                 ],
                 "trend":false,
                 "middle":true,
@@ -83,6 +108,16 @@
                     ["long",[1,2],[2]],
                     ["short",[4,6],[2]]
                 ],
+                "reflect":
+                ["try1",
+                 "try2",
+                 "try3"               
+                ],
+                "reflect":
+                ["try1",
+                 "try2",
+                 "try3"               
+                ],
                 "trend":true,
                 "middle":false,
                 "jump-block":-56,
@@ -94,6 +129,11 @@
                     ["long",[0,2],[6]],
                     ["long",[2,5],[6]],
                     ["short",[4,6],[3]]
+                ],
+                "reflect":
+                ["try1",
+                 "try2",
+                 "try3"               
                 ],
                 "trend":true,
                 "middle":false,
@@ -109,6 +149,11 @@
                     ["short",[2,4],[0,2]],
                     ["long",[0,2,5],[0,2]]
                 ],
+                "reflect":
+                ["try1",
+                 "try2",
+                 "try3"               
+                ],
                 "trend":false,
                 "middle":false,
                 "jump-block":63,
@@ -120,6 +165,11 @@
                     ["short",[0,2],[0]],
                     ["short",[2,7],[2]],
                     ["long",[0,2,6],[3]]
+                ],
+                "reflect":
+                ["try1",
+                 "try2",
+                 "try3"               
                 ],
                 "trend":false,
                 "middle":false,
@@ -135,6 +185,11 @@
                     ["short",[2,7],[2]]
 
                 ],
+                "reflect":
+                ["try1",
+                 "try2",
+                 "try3"               
+                ],
                 "trend":true,
                 "middle":false,
                 "jump-block":231,
@@ -148,6 +203,11 @@
                     ["short",[0,2,4,6],[0]],
                     ["short",[2,7],[2]]
 
+                ],
+                "reflect":
+                ["try1",
+                 "try2",
+                 "try3"               
                 ],
                 "trend":true,
                 "middle":false,
@@ -164,6 +224,11 @@
 
 
                 ],
+                "reflect":
+                ["try1",
+                 "try2",
+                 "try3"               
+                ],
                 "trend":true,
                 "middle":false,
                 "jump-block":140,
@@ -176,6 +241,11 @@
                     ["short",[4,6],[3]]
 
 
+                ],
+                "reflect":
+                ["try1",
+                 "try2",
+                 "try3"               
                 ],
                 "trend":false,
                 "middle":false,
@@ -190,6 +260,11 @@
                     ["long",[2,7],[3]],
                     ["short",[2,6],[3]]
                 ],
+                "reflect":
+                ["try1",
+                 "try2",
+                 "try3"               
+                ],
                 "trend":true,
                 "middle":false,
                 "jump-block":37,
@@ -201,6 +276,11 @@
                     ["short",[0,2],[3]],
                     ["long",[1,2],[3]],
                     ["long",[2,7],[1]]
+                ],
+                "reflect":
+                ["try1",
+                 "try2",
+                 "try3"               
                 ],
                 "trend":true,
                 "middle":true,
@@ -218,6 +298,11 @@
                     ["short",[3,3],[0]]
         
                 ],
+                "reflect":
+                ["try1",
+                 "try2",
+                 "try3"               
+                ],
                 "trend":1,
                 "middle":false,
                 "jump-block":126,
@@ -233,6 +318,11 @@
                     ["long",[2,4],[0]]
         
                 ],
+                "reflect":
+                ["try1",
+                 "try2",
+                 "try3"               
+                ],
                 "trend":0,
                 "middle":true,
                 "jump-block":-75,
@@ -246,6 +336,11 @@
                     ["long",[2,7],[0]]
         
                 ],
+                "reflect":
+                ["try1",
+                 "try2",
+                 "try3"               
+                ],
                 "trend":1,
                 "middle":false,
                 "jump-block":-47,
@@ -258,6 +353,11 @@
                     ["short",[1,4],[1]]
                     
         
+                ],
+                "reflect":
+                ["try1",
+                 "try2",
+                 "try3"               
                 ],
                 "trend":0,
                 "middle":false,
@@ -273,6 +373,11 @@
                     
         
                 ],
+                "reflect":
+                ["try1",
+                 "try2",
+                 "try3"               
+                ],
                 "trend":1,
                 "middle":true,
                 "jump-block":73,
@@ -286,6 +391,11 @@
                     ["short",[2,7],[2]]
                     
         
+                ],
+                "reflect":
+                ["try1",
+                 "try2",
+                 "try3"               
                 ],
                 "trend":1,
                 "middle":false,

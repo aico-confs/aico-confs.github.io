@@ -84,6 +84,16 @@ function updateTable(day_data){
         result +=out.join('\n\t');
         result +='\n\t</tr>\n\t';
 
+        result +='\n\t<tr class="reflect">\n\t';
+        result +='\n\t<td>檢討</td>\n\t';
+        result +='\n\t<td colspan=8 align=left>';
+        result += day_data['reflect'][i];
+        result +='</td>\n\t';
+        
+        result +='\n\t</tr>\n\t';
+
+
+
         result +='</table>\n\t</div>'; 
         // 這次的單子結束
 
