@@ -113,11 +113,7 @@
                  "try2",
                  "try3"               
                 ],
-                "reflect":
-                ["try1",
-                 "try2",
-                 "try3"               
-                ],
+                
                 "trend":true,
                 "middle":false,
                 "jump-block":-56,
