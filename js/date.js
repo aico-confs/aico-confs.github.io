@@ -58,7 +58,7 @@ function updateDate(date){
     $("#date").val(date.join('-'));
     // 更新基本資訊及檢討單
     let all_title=document.querySelectorAll('.title h3 .fas');
-    let ini_title = [' 樂高框情況：',' 盤型：',' 跳空框：']
+    let ini_title = [' 損益情況：',' 盤型：',' 跳空框：']
     let table_html=document.getElementById('tablepage');
     //reset
     all_title.forEach(function(x) {
