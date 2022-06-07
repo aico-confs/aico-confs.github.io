@@ -1,1 +1,1 @@
-<?php include("./view/index.html") ?> 
+<?php include("./view/index.php") ?> 
