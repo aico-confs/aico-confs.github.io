@@ -433,7 +433,7 @@
                 ],
                 "trend":1,
                 "middle":true,
-                "jump-block":70,
+                "jump-block":-70,
                 "min-block":12
             }
         }

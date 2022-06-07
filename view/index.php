@@ -32,7 +32,10 @@
         <div class="search">
             <label >
                 <div  class="icon" ><i class="fas fa-search-dollar"></i></div>
-	            <input id="date" type="date"  />
+                <?php if(isset($_GET['date'])){
+                	$date = $_GET['date'];
+                }?>
+	            <input id="date" type="date"  value=<?php echo $date;?>/>
                 <!-- <li style="list-style:none;"><ion-icon name="search-outline"></ion-icon></li> -->
                 
                 
