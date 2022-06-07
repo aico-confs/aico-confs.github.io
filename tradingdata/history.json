@@ -420,6 +420,21 @@
                 "middle":true,
                 "jump-block":67,
                 "min-block":22
+            },
+            "0607":
+            {
+                "trade":[
+                    ["short",[6],[6]],
+                    ["short",[5,6],[4]]              
+                ],
+                "reflect":
+                ["即使不明顯，這裡應該用區間法，除非前方的下引線被傻瓜吞過",
+                 "1分K傻瓜，這裡補單我覺得還行，後面的肉沒吃到就算了"         
+                ],
+                "trend":1,
+                "middle":true,
+                "jump-block":70,
+                "min-block":12
             }
         }
 }
