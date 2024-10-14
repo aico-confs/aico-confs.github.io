@@ -7,9 +7,9 @@ https://aico-confs.github.io/undefined/hello-world-d30b9e16132b/
 https://aico-confs.github.io/
 https://aico-confs.github.io/tags/%E5%A4%A7%E7%B6%B1/
 https://aico-confs.github.io/tags/Code/
-https://aico-confs.github.io/tags/Novel/
-https://aico-confs.github.io/tags/Sociology/
 https://aico-confs.github.io/tags/Future/
+https://aico-confs.github.io/tags/Sociology/
+https://aico-confs.github.io/tags/Novel/
 https://aico-confs.github.io/tags/Orchestration/
 https://aico-confs.github.io/categories/%E6%95%99%E8%82%B2%E7%90%86%E8%AB%96/
 https://aico-confs.github.io/categories/%E6%95%99%E8%82%B2%E7%90%86%E8%AB%96/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%B8/
