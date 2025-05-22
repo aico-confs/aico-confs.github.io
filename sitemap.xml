@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://aico-confs.github.io/undefined/%E4%BD%A0%E7%9A%84%E6%96%87%E7%AB%A0%E6%A8%99%E9%A1%8C-c45d55e551f6/</loc>
+    
+    <lastmod>2025-05-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://aico-confs.github.io/undefined/pytorch-0e3e2051a63b/</loc>
     
     <lastmod>2025-05-22</lastmod>
@@ -79,13 +88,6 @@
   </url>
   
   <url>
-    <loc>https://aico-confs.github.io/tags/Novel/</loc>
-    <lastmod>2025-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://aico-confs.github.io/tags/Sociology/</loc>
     <lastmod>2025-05-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -94,6 +96,13 @@
   
   <url>
     <loc>https://aico-confs.github.io/tags/Future/</loc>
+    <lastmod>2025-05-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://aico-confs.github.io/tags/Novel/</loc>
     <lastmod>2025-05-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
