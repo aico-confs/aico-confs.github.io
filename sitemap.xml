@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://aico-confs.github.io/undefined/%E4%BD%A0%E7%9A%84%E6%96%87%E7%AB%A0%E6%A8%99%E9%A1%8C-c45d55e551f6/</loc>
+    <loc>https://aico-confs.github.io/en/48d89955cbcc-4-Essential-Questions-Every-Data-Science-Beginner-Should-Ask.html</loc>
     
     <lastmod>2025-05-22</lastmod>
     
@@ -11,54 +11,9 @@
   </url>
   
   <url>
-    <loc>https://aico-confs.github.io/undefined/pytorch-0e3e2051a63b/</loc>
+    <loc>https://aico-confs.github.io/zh/71a3a7c6ec2a-%E5%88%9D%E5%AD%B8%E8%B3%87%E6%96%99%E7%A7%91%E5%AD%B8%E5%89%8D%EF%BC%8C%E8%A9%B2%E5%95%8F%E7%9A%84-4-%E5%A4%A7%E9%97%9C%E9%8D%B5%E5%95%8F%E9%A1%8C.html</loc>
     
     <lastmod>2025-05-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aico-confs.github.io/undefined/future%E5%A4%A7%E7%B6%B1-8da5f350fc97/</loc>
-    
-    <lastmod>2024-10-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aico-confs.github.io/undefined/novel%E5%A4%A7%E7%B6%B1-957dfc12982d/</loc>
-    
-    <lastmod>2024-10-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aico-confs.github.io/undefined/orchestration%E5%A4%A7%E7%B6%B1-35f5dee6c787/</loc>
-    
-    <lastmod>2024-10-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aico-confs.github.io/undefined/sociology%E5%A4%A7%E7%B6%B1-0556ffa30866/</loc>
-    
-    <lastmod>2024-10-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aico-confs.github.io/undefined/hello-world-d30b9e16132b/</loc>
-    
-    <lastmod>2024-10-11</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -74,42 +29,56 @@
 
   
   <url>
-    <loc>https://aico-confs.github.io/tags/%E5%A4%A7%E7%B6%B1/</loc>
+    <loc>https://aico-confs.github.io/tags/Data-Science/</loc>
     <lastmod>2025-05-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://aico-confs.github.io/tags/Code/</loc>
+    <loc>https://aico-confs.github.io/tags/Machine-Learning/</loc>
     <lastmod>2025-05-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://aico-confs.github.io/tags/Sociology/</loc>
+    <loc>https://aico-confs.github.io/tags/Data-Analysis/</loc>
     <lastmod>2025-05-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://aico-confs.github.io/tags/Future/</loc>
+    <loc>https://aico-confs.github.io/tags/Beginner-Guide/</loc>
     <lastmod>2025-05-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://aico-confs.github.io/tags/Novel/</loc>
+    <loc>https://aico-confs.github.io/tags/%E8%B3%87%E6%96%99%E7%A7%91%E5%AD%B8/</loc>
     <lastmod>2025-05-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://aico-confs.github.io/tags/Orchestration/</loc>
+    <loc>https://aico-confs.github.io/tags/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92/</loc>
+    <lastmod>2025-05-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://aico-confs.github.io/tags/%E8%B3%87%E6%96%99%E5%88%86%E6%9E%90/</loc>
+    <lastmod>2025-05-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://aico-confs.github.io/tags/%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97/</loc>
     <lastmod>2025-05-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -118,14 +87,21 @@
 
   
   <url>
-    <loc>https://aico-confs.github.io/categories/%E6%95%99%E8%82%B2%E7%90%86%E8%AB%96/</loc>
+    <loc>https://aico-confs.github.io/categories/Tutorial/</loc>
     <lastmod>2025-05-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://aico-confs.github.io/categories/%E6%95%99%E8%82%B2%E7%90%86%E8%AB%96/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%B8/</loc>
+    <loc>https://aico-confs.github.io/categories/%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2025-05-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://aico-confs.github.io/categories/%E6%95%99%E7%A8%8B/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92/</loc>
     <lastmod>2025-05-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
