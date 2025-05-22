@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Aico Confs</title>
+  
+  <subtitle>AI / NLP 技術教學與資源分享</subtitle>
+  <link href="https://aico-confs.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://aico-confs.github.io/"/>
+  <updated>2024-10-14T08:06:01.861Z</updated>
+  <id>https://aico-confs.github.io/</id>
+  
+  <author>
+    <name>Aico Confs</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Novel大綱</title>
+    <link href="https://aico-confs.github.io/undefined/novel%E5%A4%A7%E7%B6%B1-957dfc12982d/"/>
+    <id>https://aico-confs.github.io/undefined/novel%E5%A4%A7%E7%B6%B1-957dfc12982d/</id>
+    <published>2024-10-14T08:04:26.000Z</published>
+    <updated>2024-10-14T08:06:01.861Z</updated>
+    
+    <content type="html"><![CDATA[<hr>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;hr&gt;
+</summary>
+      
+    
+    
+    
+    
+    <category term="大綱" scheme="https://aico-confs.github.io/tags/%E5%A4%A7%E7%B6%B1/"/>
+    
+    <category term="Novel" scheme="https://aico-confs.github.io/tags/Novel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Future大綱</title>
+    <link href="https://aico-confs.github.io/undefined/future%E5%A4%A7%E7%B6%B1-8da5f350fc97/"/>
+    <id>https://aico-confs.github.io/undefined/future%E5%A4%A7%E7%B6%B1-8da5f350fc97/</id>
+    <published>2024-10-14T08:04:16.000Z</published>
+    <updated>2024-10-14T08:06:23.899Z</updated>
+    
+    
+    
+    
+    
+    <category term="大綱" scheme="https://aico-confs.github.io/tags/%E5%A4%A7%E7%B6%B1/"/>
+    
+    <category term="Future" scheme="https://aico-confs.github.io/tags/Future/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Pytorch</title>
+    <link href="https://aico-confs.github.io/undefined/pytorch-0e3e2051a63b/"/>
+    <id>https://aico-confs.github.io/undefined/pytorch-0e3e2051a63b/</id>
+    <published>2024-10-14T08:04:13.000Z</published>
+    <updated>2025-05-22T02:13:18.658Z</updated>
+    
+    
+    
+    
+    
+    <category term="大綱" scheme="https://aico-confs.github.io/tags/%E5%A4%A7%E7%B6%B1/"/>
+    
+    <category term="Code" scheme="https://aico-confs.github.io/tags/Code/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Orchestration大綱</title>
+    <link href="https://aico-confs.github.io/undefined/orchestration%E5%A4%A7%E7%B6%B1-35f5dee6c787/"/>
+    <id>https://aico-confs.github.io/undefined/orchestration%E5%A4%A7%E7%B6%B1-35f5dee6c787/</id>
+    <published>2024-10-14T07:59:21.000Z</published>
+    <updated>2024-10-14T08:02:28.880Z</updated>
+    
+    
+    
+    
+    
+    <category term="大綱" scheme="https://aico-confs.github.io/tags/%E5%A4%A7%E7%B6%B1/"/>
+    
+    <category term="Orchestration" scheme="https://aico-confs.github.io/tags/Orchestration/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Sociology大綱</title>
+    <link href="https://aico-confs.github.io/undefined/sociology%E5%A4%A7%E7%B6%B1-0556ffa30866/"/>
+    <id>https://aico-confs.github.io/undefined/sociology%E5%A4%A7%E7%B6%B1-0556ffa30866/</id>
+    <published>2024-10-14T02:36:12.000Z</published>
+    <updated>2024-10-14T08:01:03.581Z</updated>
+    
+    
+    
+    
+    <category term="教育理論" scheme="https://aico-confs.github.io/categories/%E6%95%99%E8%82%B2%E7%90%86%E8%AB%96/"/>
+    
+    <category term="教育心理學" scheme="https://aico-confs.github.io/categories/%E6%95%99%E8%82%B2%E7%90%86%E8%AB%96/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%B8/"/>
+    
+    
+    <category term="大綱" scheme="https://aico-confs.github.io/tags/%E5%A4%A7%E7%B6%B1/"/>
+    
+    <category term="Sociology" scheme="https://aico-confs.github.io/tags/Sociology/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://aico-confs.github.io/undefined/hello-world-d30b9e16132b/"/>
+    <id>https://aico-confs.github.io/undefined/hello-world-d30b9e16132b/</id>
+    <published>2024-10-11T07:19:15.411Z</published>
+    <updated>2024-10-11T07:19:15.411Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
