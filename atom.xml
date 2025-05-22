@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Aico Confs</title>
   
-  
+  <subtitle>AI 與深度學習知識誌</subtitle>
   <link href="https://aico-confs.github.io/atom.xml" rel="self"/>
   
   <link href="https://aico-confs.github.io/"/>
