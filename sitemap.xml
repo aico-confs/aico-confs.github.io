@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://aico-confs.github.io/en/3f30320049e0-en-index.html</loc>
+    
+    <lastmod>2025-05-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aico-confs.github.io/zh/b848ad112e09-zh-index.html</loc>
+    
+    <lastmod>2025-05-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://aico-confs.github.io/en/48d89955cbcc-4-Essential-Questions-Every-Data-Science-Beginner-Should-Ask.html</loc>
     
     <lastmod>2025-05-22</lastmod>
