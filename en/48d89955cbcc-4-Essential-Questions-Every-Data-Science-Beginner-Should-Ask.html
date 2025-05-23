@@ -64,43 +64,76 @@
 <meta name="generator" content="Hexo 7.3.0"></head>
 <body>
   <!-- ===== 全站語系切換器 START ===== -->
-  <div id="lang-switcher" style="position:fixed;top:1rem;right:1rem;z-index:1000;">
-    <button id="lang-btn" style="padding:.25rem .5rem;border:none;border-radius:.25rem;cursor:pointer;">
-      <!-- JS 會自動填入文字 -->
+  <style>
+    #lang-switcher {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      z-index: 1000;
+    }
+    
+    .lang-btn {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      border: none;
+      background: #333;
+      color: #fff;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.5s ease;
+    }
+    
+    .lang-btn:hover {
+      transform: rotate(360deg);
+    }
+    
+    .lang-btn:active {
+      background: #666;
+    }
+    </style>
+    
+  <div id="lang-switcher">
+    <button id="lang-btn" class="lang-btn">
+      <!-- JS 會填入語言縮寫 -->
     </button>
   </div>
+  
   <script>
-  (function(){
-    const SUPPORTED = ['zh','en'];
-    const stored = localStorage.getItem('siteLang');
-    const nav = (navigator.language||navigator.userLanguage).toLowerCase();
-    const browserLang = nav.startsWith('en') ? 'en' : 'zh';
-    const lang = (stored && SUPPORTED.includes(stored)) ? stored : browserLang;
-    const path = window.location.pathname;
-    const hasPrefix = /^\/(zh|en)\//.test(path);
-
-    // 首次訪問無前綴，自動導向
-    if (!hasPrefix) {
-      window.location.replace(`/${lang}${path}`);
-      return;
-    }
-
-    const btn = document.getElementById('lang-btn');
-    if (path.startsWith('/zh/')) {
-      btn.textContent = 'Switch to English';
-      btn.onclick = () => {
-        localStorage.setItem('siteLang','en');
-        window.location.pathname = path.replace(/^\/zh\//,'/en/');
-      };
-    } else {
-      btn.textContent = '切換到中文';
-      btn.onclick = () => {
-        localStorage.setItem('siteLang','zh');
-        window.location.pathname = path.replace(/^\/en\//,'/zh/');
-      };
-    }
-  })();
-  </script>
+    (function(){
+      const SUPPORTED = ['zh','en'];
+      const stored = localStorage.getItem('siteLang');
+      const nav = (navigator.language||navigator.userLanguage).toLowerCase();
+      const browserLang = nav.startsWith('en') ? 'en' : 'zh';
+      const lang = (stored && SUPPORTED.includes(stored)) ? stored : browserLang;
+      const path = window.location.pathname;
+      const hasPrefix = /^\/(zh|en)\//.test(path);
+    
+      if (!hasPrefix) {
+        window.location.replace(`/${lang}${path}`);
+        return;
+      }
+    
+      const btn = document.getElementById('lang-btn');
+      if (path.startsWith('/zh/')) {
+        btn.textContent = 'EN';
+        btn.title = '切換到英文';
+        btn.onclick = () => {
+          localStorage.setItem('siteLang','en');
+          window.location.pathname = path.replace(/^\/zh\//,'/en/');
+        };
+      } else {
+        btn.textContent = '中';
+        btn.title = 'Switch to Chinese';
+        btn.onclick = () => {
+          localStorage.setItem('siteLang','zh');
+          window.location.pathname = path.replace(/^\/en\//,'/zh/');
+        };
+      }
+    })();
+    </script>
+    
   <!-- ===== 全站語系切換器 END ===== -->
 
   <div id="container">
