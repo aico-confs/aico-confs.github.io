@@ -125,14 +125,14 @@
       const btn = document.getElementById('lang-btn');
       if (path.startsWith('/zh/')) {
         btn.textContent = 'EN';
-        btn.title = 'Switch to English';
+        btn.title = '切換到英文';
         btn.onclick = () => {
           localStorage.setItem('siteLang','en');
           window.location.pathname = path.replace(/^\/zh\//,'/en/');
         };
       } else {
         btn.textContent = '中';
-        btn.title = '切換到中文';
+        btn.title = 'Switch to Chinese';
         btn.onclick = () => {
           localStorage.setItem('siteLang','zh');
           window.location.pathname = path.replace(/^\/en\//,'/zh/');
