@@ -108,49 +108,45 @@
   <script>
     (function(){
       const SUPPORTED = ['zh','en'];
-      // 当前 URL
-      const path = window.location.pathname;
-      // 检测当前是 zh 还是 en
-      const currentLang = path.startsWith('/en/') ? 'en' : 'zh';
-      // 目标要切到的语言
-      const targetLang = currentLang === 'zh' ? 'en' : 'zh';
-      // 优先看 localStorage
       const stored = localStorage.getItem('siteLang');
-      // 我们这里不用浏览器语言了，优先以当前 URL 为准
-      const langToStore = SUPPORTED.includes(stored) ? stored : currentLang;
-    
+      const navLang = (navigator.language||navigator.userLanguage).toLowerCase();
+      const browserLang = navLang.startsWith('en') ? 'en' : 'zh';
+      const lang = (stored && SUPPORTED.includes(stored)) ? stored : browserLang;
+      const path = window.location.pathname;
+      const hasPrefix = /^\/(zh|en)\//.test(path);
+
+      // 首次访问无前缀时自动导向
+      if (!hasPrefix) {
+        window.location.replace(`/${lang}${path}`);
+        return;
+      }
+
       const btn = document.getElementById('lang-btn');
-      btn.textContent = currentLang === 'zh' ? 'EN' : '中';
-      btn.title = currentLang === 'zh' ? '切換到英文' : 'Switch to Chinese';
-    
-      btn.onclick = () => {
-        // 存储用户偏好
-        localStorage.setItem('siteLang', langToStore);
-    
-        // 如果 front-matter 里有 alternate_url，就直接跳到指定页面
+
+      function switchLang() {
+        localStorage.setItem('siteLang', lang);
         if (window.pageAlternateUrl) {
+          // 优先使用 alternate_url
           window.location.pathname = window.pageAlternateUrl;
         } else {
-          // 否则才用前缀替换
-          window.location.pathname = path.replace(
-            new RegExp('^/' + currentLang + '/'),
-            '/' + targetLang + '/'
-          );
+          // fallback 前缀替换
+          const from = lang === 'zh' ? '/zh/' : '/en/';
+          const to   = lang === 'zh' ? '/en/' : '/zh/';
+          window.location.pathname = path.replace(from, to);
         }
-      };
-      
-      // 首次访问无 zh|en 前缀时，自动导向 localStorage 或浏览器首选
-      const hasPrefix = /^\/(zh|en)\//.test(path);
-      if (!hasPrefix) {
-        const fallback = stored && SUPPORTED.includes(stored)
-          ? stored
-          : (navigator.language||navigator.userLanguage).toLowerCase().startsWith('en')
-            ? 'en' : 'zh';
-        window.location.replace(`/${fallback}${path}`);
+      }
+
+      if (path.startsWith('/zh/')) {
+        btn.textContent = 'EN';
+        btn.title = '切換到英文';
+        btn.onclick = switchLang;
+      } else {
+        btn.textContent = '中';
+        btn.title = 'Switch to Chinese';
+        btn.onclick = switchLang;
       }
     })();
-    </script>
-    
+  </script>
   <!-- ===== 全站語系切換器 END ===== -->
 
   <div id="container">
@@ -319,6 +315,58 @@
 
 
   
+    <article id="index-zh-index" class="article article-type-index" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/zh/b848ad112e09-zh-index.html" class="article-date">
+  	<time datetime="2025-05-23T00:33:59.669Z" itemprop="datePublished">2025-05-23</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zh/b848ad112e09-zh-index.html">
+        Aico Confs 首頁
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
     <article id="post-初學資料科學前，該問的-4-大關鍵問題" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -417,58 +465,6 @@
 	<a class="article-category-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a><a class="article-category-link" href="/categories/%E6%95%99%E7%A8%8B/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92/">機器學習</a>
 	</div>
 
-
-      
-      <div class="clearfix"></div>
-    </div>
-      
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="index-zh-index" class="article article-type-index" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/zh/b848ad112e09-zh-index.html" class="article-date">
-  	<time datetime="2025-05-23T00:33:59.669Z" itemprop="datePublished">2025-05-23</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/zh/b848ad112e09-zh-index.html">
-        Aico Confs 首頁
-        
-      </a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
 
       
       <div class="clearfix"></div>
