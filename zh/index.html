@@ -116,32 +116,31 @@
       const lang = (stored && SUPPORTED.includes(stored)) ? stored : browserLang;
       const path = window.location.pathname;
       const hasPrefix = /^\/(zh|en)\//.test(path);
-  
-      // ★ 根目錄 / 或沒有前綴時，一律定向到 /zh/index.html or /en/index.html
+    
       if (!hasPrefix) {
-        window.location.replace(`/${lang}/index.html`);
+        window.location.replace(`/${lang}${path}`);
         return;
       }
-  
+    
       const btn = document.getElementById('lang-btn');
       if (path.startsWith('/zh/')) {
         btn.textContent = 'EN';
-        btn.title       = '切換到英文';
-        btn.onclick     = () => {
-          localStorage.setItem('siteLang', 'en');
-          window.location.pathname = '/en/index.html';
+        btn.title = '切換到英文';
+        btn.onclick = () => {
+          localStorage.setItem('siteLang','en');
+          window.location.pathname = path.replace(/^\/zh\//,'/en/');
         };
       } else {
         btn.textContent = '中';
-        btn.title       = 'Switch to Chinese';
-        btn.onclick     = () => {
-          localStorage.setItem('siteLang', 'zh');
-          window.location.pathname = '/zh/index.html';
+        btn.title = 'Switch to Chinese';
+        btn.onclick = () => {
+          localStorage.setItem('siteLang','zh');
+          window.location.pathname = path.replace(/^\/en\//,'/zh/');
         };
       }
     })();
-  </script>
-  
+    </script>
+    
   <!-- ===== 全站語系切換器 END ===== -->
 
   <div id="container">
