@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://aico-confs.github.io/zh/77aa9c73813e-zh-%E6%B8%AC%E8%A9%A6.html</loc>
+    <loc>https://aico-confs.github.io/zh/71a3a7c6ec2a-%E5%88%9D%E5%AD%B8%E8%B3%87%E6%96%99%E7%A7%91%E5%AD%B8%E5%89%8D%EF%BC%8C%E8%A9%B2%E5%95%8F%E7%9A%84-4-%E5%A4%A7%E9%97%9C%E9%8D%B5%E5%95%8F%E9%A1%8C.html</loc>
     
     <lastmod>2025-05-26</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://aico-confs.github.io/zh/71a3a7c6ec2a-%E5%88%9D%E5%AD%B8%E8%B3%87%E6%96%99%E7%A7%91%E5%AD%B8%E5%89%8D%EF%BC%8C%E8%A9%B2%E5%95%8F%E7%9A%84-4-%E5%A4%A7%E9%97%9C%E9%8D%B5%E5%95%8F%E9%A1%8C.html</loc>
+    <loc>https://aico-confs.github.io/zh/77aa9c73813e-zh-%E6%B8%AC%E8%A9%A6.html</loc>
     
     <lastmod>2025-05-26</lastmod>
     
@@ -54,34 +54,6 @@
     <priority>1.0</priority>
   </url>
 
-  
-  <url>
-    <loc>https://aico-confs.github.io/tags/%E8%B3%87%E6%96%99%E7%A7%91%E5%AD%B8/</loc>
-    <lastmod>2025-05-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://aico-confs.github.io/tags/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92/</loc>
-    <lastmod>2025-05-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://aico-confs.github.io/tags/%E8%B3%87%E6%96%99%E5%88%86%E6%9E%90/</loc>
-    <lastmod>2025-05-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://aico-confs.github.io/tags/%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97/</loc>
-    <lastmod>2025-05-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
   
   <url>
     <loc>https://aico-confs.github.io/tags/Data-Science/</loc>
@@ -111,17 +83,45 @@
     <priority>0.2</priority>
   </url>
   
-
-  
   <url>
-    <loc>https://aico-confs.github.io/categories/%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://aico-confs.github.io/tags/%E8%B3%87%E6%96%99%E7%A7%91%E5%AD%B8/</loc>
     <lastmod>2025-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
+    <loc>https://aico-confs.github.io/tags/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92/</loc>
+    <lastmod>2025-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://aico-confs.github.io/tags/%E8%B3%87%E6%96%99%E5%88%86%E6%9E%90/</loc>
+    <lastmod>2025-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://aico-confs.github.io/tags/%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97/</loc>
+    <lastmod>2025-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+
+  
+  <url>
     <loc>https://aico-confs.github.io/categories/Tutorial/</loc>
+    <lastmod>2025-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://aico-confs.github.io/categories/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2025-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
