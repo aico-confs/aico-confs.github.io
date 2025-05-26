@@ -107,45 +107,49 @@
   <script>
     (function(){
       const SUPPORTED = ['zh','en'];
-      const stored = localStorage.getItem('siteLang');
-      const navLang = (navigator.language||navigator.userLanguage).toLowerCase();
-      const browserLang = navLang.startsWith('en') ? 'en' : 'zh';
-      const lang = (stored && SUPPORTED.includes(stored)) ? stored : browserLang;
+      // 当前 URL
       const path = window.location.pathname;
-      const hasPrefix = /^\/(zh|en)\//.test(path);
-
-      // 首次访问无前缀时自动导向
-      if (!hasPrefix) {
-        window.location.replace(`/${lang}${path}`);
-        return;
-      }
-
+      // 检测当前是 zh 还是 en
+      const currentLang = path.startsWith('/en/') ? 'en' : 'zh';
+      // 目标要切到的语言
+      const targetLang = currentLang === 'zh' ? 'en' : 'zh';
+      // 优先看 localStorage
+      const stored = localStorage.getItem('siteLang');
+      // 我们这里不用浏览器语言了，优先以当前 URL 为准
+      const langToStore = SUPPORTED.includes(stored) ? stored : currentLang;
+    
       const btn = document.getElementById('lang-btn');
-
-      function switchLang() {
-        localStorage.setItem('siteLang', lang);
+      btn.textContent = currentLang === 'zh' ? 'EN' : '中';
+      btn.title = currentLang === 'zh' ? '切換到英文' : 'Switch to Chinese';
+    
+      btn.onclick = () => {
+        // 存储用户偏好
+        localStorage.setItem('siteLang', langToStore);
+    
+        // 如果 front-matter 里有 alternate_url，就直接跳到指定页面
         if (window.pageAlternateUrl) {
-          // 优先使用 alternate_url
           window.location.pathname = window.pageAlternateUrl;
         } else {
-          // fallback 前缀替换
-          const from = lang === 'zh' ? '/zh/' : '/en/';
-          const to   = lang === 'zh' ? '/en/' : '/zh/';
-          window.location.pathname = path.replace(from, to);
+          // 否则才用前缀替换
+          window.location.pathname = path.replace(
+            new RegExp('^/' + currentLang + '/'),
+            '/' + targetLang + '/'
+          );
         }
-      }
-
-      if (path.startsWith('/zh/')) {
-        btn.textContent = 'EN';
-        btn.title = '切換到英文';
-        btn.onclick = switchLang;
-      } else {
-        btn.textContent = '中';
-        btn.title = 'Switch to Chinese';
-        btn.onclick = switchLang;
+      };
+      
+      // 首次访问无 zh|en 前缀时，自动导向 localStorage 或浏览器首选
+      const hasPrefix = /^\/(zh|en)\//.test(path);
+      if (!hasPrefix) {
+        const fallback = stored && SUPPORTED.includes(stored)
+          ? stored
+          : (navigator.language||navigator.userLanguage).toLowerCase().startsWith('en')
+            ? 'en' : 'zh';
+        window.location.replace(`/${fallback}${path}`);
       }
     })();
-  </script>
+    </script>
+    
   <!-- ===== 全站語系切換器 END ===== -->
 
   <div id="container">
