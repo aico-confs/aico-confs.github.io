@@ -123,19 +123,22 @@
       }
     
       const btn = document.getElementById('lang-btn');
+      // 如果目前路徑是 zh 開頭，就切到 en/index.html，反之切到 zh/index.html
       if (path.startsWith('/zh/')) {
         btn.textContent = 'EN';
-        btn.title = '切換到英文';
-        btn.onclick = () => {
-          localStorage.setItem('siteLang','en');
-          window.location.pathname = path.replace(/^\/zh\//,'/en/');
+        btn.title       = '切換到英文';
+        btn.onclick     = () => {
+          localStorage.setItem('siteLang', 'en');
+          // 不管當前頁面路徑為何，一律跳到英文首頁
+          window.location.pathname = '/en/index.html';
         };
       } else {
         btn.textContent = '中';
-        btn.title = 'Switch to Chinese';
-        btn.onclick = () => {
-          localStorage.setItem('siteLang','zh');
-          window.location.pathname = path.replace(/^\/en\//,'/zh/');
+        btn.title       = 'Switch to Chinese';
+        btn.onclick     = () => {
+          localStorage.setItem('siteLang', 'zh');
+          // 一律跳到中文首頁
+          window.location.pathname = '/zh/index.html';
         };
       }
     })();
