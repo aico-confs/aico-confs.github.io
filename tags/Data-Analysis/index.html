@@ -124,15 +124,13 @@
       function switchLang() {
         localStorage.setItem('siteLang', lang);
         if (window.pageAlternateUrl) {
-          // 文章页：优先使用 alternate_url
+          // 优先使用 alternate_url
           window.location.pathname = window.pageAlternateUrl;
         } else {
-          // 首页或无 alternate_url：前缀替换（兼容 /index.html）
-          const re = lang === 'zh'
-            ? /^\/zh(\/|\/index\.html)?/
-            : /^\/en(\/|\/index\.html)?/;
-          const target = lang === 'zh' ? '/en/' : '/zh/';
-          window.location.pathname = path.replace(re, target);
+          // fallback 前缀替换
+          const from = lang === 'zh' ? '/zh/' : '/en/';
+          const to   = lang === 'zh' ? '/en/' : '/zh/';
+          window.location.pathname = path.replace(from, to);
         }
       }
 
@@ -142,7 +140,7 @@
         btn.onclick = switchLang;
       } else {
         btn.textContent = '中';
-        btn.title = '切換到中文';
+        btn.title = 'Switch to Chinese';
         btn.onclick = switchLang;
       }
     })();
