@@ -109,42 +109,44 @@
       const stored = localStorage.getItem('siteLang');
       const navLang = (navigator.language||navigator.userLanguage).toLowerCase();
       const browserLang = navLang.startsWith('en') ? 'en' : 'zh';
-      const lang = (stored && SUPPORTED.includes(stored)) ? stored : browserLang;
+      // 初始化时先拿到用户偏好或浏览器语言，作按钮文字之用
+      let initialLang = (stored && SUPPORTED.includes(stored)) ? stored : browserLang;
+
       const path = window.location.pathname;
       const hasPrefix = /^\/(zh|en)\//.test(path);
-
-      // 首次访问无前缀时自动导向
       if (!hasPrefix) {
-        window.location.replace(`/${lang}${path}`);
+        window.location.replace(`/${initialLang}${path}`);
         return;
       }
 
       const btn = document.getElementById('lang-btn');
-
-      function switchLang() {
-        localStorage.setItem('siteLang', lang);
-        if (window.pageAlternateUrl) {
-          // 文章页：优先使用 alternate_url
-          window.location.pathname = window.pageAlternateUrl;
-        } else {
-          // 首页或无 alternate_url：前缀替换（兼容 /index.html）
-          const re = lang === 'zh'
-            ? /^\/zh(\/|\/index\.html)?/
-            : /^\/en(\/|\/index\.html)?/;
-          const target = lang === 'zh' ? '/en/' : '/zh/';
-          window.location.pathname = path.replace(re, target);
-        }
-      }
-
+      // 设置按钮文字
       if (path.startsWith('/zh/')) {
         btn.textContent = 'EN';
         btn.title = '切換到英文';
-        btn.onclick = switchLang;
       } else {
         btn.textContent = '中';
         btn.title = '切換到中文';
-        btn.onclick = switchLang;
       }
+
+      btn.addEventListener('click', function(){
+        // 每次点击都重新判断当前是哪一个，再切到对方
+        const currentLang = path.startsWith('/zh/') ? 'zh' : 'en';
+        const targetLang  = currentLang === 'zh' ? 'en' : 'zh';
+        localStorage.setItem('siteLang', targetLang);
+
+        if (window.pageAlternateUrl) {
+          // 文章页：用一对一映射
+          window.location.pathname = window.pageAlternateUrl;
+        } else {
+          // 首页：兼容 /zh/ /zh/index.html
+          const re = currentLang === 'zh'
+            ? /^\/zh(\/|\/index\.html)?/
+            : /^\/en(\/|\/index\.html)?/;
+          // 替换成目标语言前缀
+          window.location.pathname = path.replace(re, `/${targetLang}/`);
+        }
+      });
     })();
   </script>
   <!-- ===== 全站語系切換器 END ===== -->
