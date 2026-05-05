@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://aico-confs.github.io/privacy-policy.html</loc>
+    <loc>https://aico-confs.github.io/en/a3137b75dc48-4-Essential-Questions-Every-Data-Science-Beginner-Should-Ask.html</loc>
     
     <lastmod>2026-05-05</lastmod>
     
@@ -13,7 +13,16 @@
   <url>
     <loc>https://aico-confs.github.io/zh/71a3a7c6ec2a-%E5%88%9D%E5%AD%B8%E8%B3%87%E6%96%99%E7%A7%91%E5%AD%B8%E5%89%8D%EF%BC%8C%E8%A9%B2%E5%95%8F%E7%9A%84-4-%E5%A4%A7%E9%97%9C%E9%8D%B5%E5%95%8F%E9%A1%8C.html</loc>
     
-    <lastmod>2026-05-02</lastmod>
+    <lastmod>2026-05-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aico-confs.github.io/privacy-policy.html</loc>
+    
+    <lastmod>2026-05-05</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -37,15 +46,6 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://aico-confs.github.io/en/48d89955cbcc-4-Essential-Questions-Every-Data-Science-Beginner-Should-Ask.html</loc>
-    
-    <lastmod>2026-05-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   <url>
     <loc>https://aico-confs.github.io/</loc>
@@ -54,34 +54,6 @@
     <priority>1.0</priority>
   </url>
 
-  
-  <url>
-    <loc>https://aico-confs.github.io/tags/Data-Science/</loc>
-    <lastmod>2026-05-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://aico-confs.github.io/tags/Machine-Learning/</loc>
-    <lastmod>2026-05-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://aico-confs.github.io/tags/Data-Analysis/</loc>
-    <lastmod>2026-05-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://aico-confs.github.io/tags/Beginner-Guide/</loc>
-    <lastmod>2026-05-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
   
   <url>
     <loc>https://aico-confs.github.io/tags/%E8%B3%87%E6%96%99%E7%A7%91%E5%AD%B8/</loc>
@@ -112,13 +84,6 @@
   </url>
   
 
-  
-  <url>
-    <loc>https://aico-confs.github.io/categories/Tutorial/</loc>
-    <lastmod>2026-05-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
   
   <url>
     <loc>https://aico-confs.github.io/categories/%E6%95%99%E7%A8%8B/</loc>
