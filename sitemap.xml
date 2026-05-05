@@ -2,7 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://aico-confs.github.io/en/a3137b75dc48-4-Essential-Questions-Every-Data-Science-Beginner-Should-Ask.html</loc>
+    <loc>https://aico-confs.github.io/undefined/950dbd75d5b1-en-privacy-policy.html</loc>
+    
+    <lastmod>2026-05-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aico-confs.github.io/en/48d89955cbcc-4-Essential-Questions-Every-Data-Science-Beginner-Should-Ask.html</loc>
     
     <lastmod>2026-05-05</lastmod>
     
@@ -56,6 +65,34 @@
 
   
   <url>
+    <loc>https://aico-confs.github.io/tags/Data-Science/</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://aico-confs.github.io/tags/Machine-Learning/</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://aico-confs.github.io/tags/Data-Analysis/</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://aico-confs.github.io/tags/Beginner-Guide/</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://aico-confs.github.io/tags/%E8%B3%87%E6%96%99%E7%A7%91%E5%AD%B8/</loc>
     <lastmod>2026-05-05</lastmod>
     <changefreq>weekly</changefreq>
@@ -84,6 +121,13 @@
   </url>
   
 
+  
+  <url>
+    <loc>https://aico-confs.github.io/categories/Tutorial/</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
   <url>
     <loc>https://aico-confs.github.io/categories/%E6%95%99%E7%A8%8B/</loc>
